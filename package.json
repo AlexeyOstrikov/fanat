@@ -3,11 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
+    "android": "react-native run-android --variant=glhfDebug",
     "androidBundle": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
-    "androidReleaseBuild": "cd android && ./gradlew clean && ./gradlew bundleRelease",
-    "androidApkReleaseBuild": "cd android && ./gradlew clean && ./gradlew assembleRelease",
-    "ios": "react-native run-ios",
+    "androidReleaseBuild": "cd android && ./gradlew clean && ./gradlew bundleGlhfRelease",
+    "androidApkBuild": "cd android && ./gradlew clean && ./gradlew assembleGlhfRelease",
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint ."
