@@ -23,7 +23,7 @@ const userMenu = [
 		targetScreen: 'Rules',
 	},
 	{
-		title: 'О приложении',
+		title: 'Политика',
 		targetScreen: 'AboutApp',
 	},
 	{
@@ -46,7 +46,7 @@ const teamMenu = [
 		targetScreen: 'Rules',
 	},
 	{
-		title: 'О приложении',
+		title: 'Политика',
 		targetScreen: 'AboutApp',
 	},
 ];
@@ -102,14 +102,14 @@ const ProfileSettingsScreen = (props) => {
 			/>
 		</TouchableOpacity>
 	);
-	
+
 	const changeProfileType = () => {
 		props.changeProfileType();
 		navigation.navigate('Profile');
 	};
-	
+
 	const menu = props.isTeamProfile ? teamMenu : userMenu;
-	
+
 	return (
 		<ScreenWrapper>
 			<View style={styles.page}>

@@ -64,7 +64,7 @@ const ProfileNavigator = (props) => {
 	if (props.profileType === 'COMMAND' && !props.teamId) {
 		return <CreateTeamNavigator/>;
 	}
-	
+
 	return (
 		<Stack.Navigator
 			initialRouteName='Profile'
@@ -113,7 +113,7 @@ const ProfileNavigator = (props) => {
 			<Stack.Screen
 				name='AboutApp'
 				options={{
-					title: 'О приложении',
+					title: 'Политика',
 					cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
 					headerRight: () => <CloseButton/>,
 				}}
